@@ -50,11 +50,11 @@
 <br/>
 <h1>🏆담당 : 결제 및 관리자페이지(주문)</h1>
 
->꼼꼼한 결제처리
+>꼼꼼한 검증을 통한 결제
 >
 >부분취소 기능 구현
 >
->편리한 관리기능
+>일괄처리(다중처리)로 편리한 관리
 <br/>
 <h2>📍주요 DB테이블 소개</h2>
 <img width="900" alt="테이블" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/02fbf6b4-a407-4d8b-86ed-ae6737df6379"/>

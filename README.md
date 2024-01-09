@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=180&section=header&text=BrickFarm&fontSize=90"/>
+<div align = center><img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=180&section=header&text=BrickFarm&fontSize=90"/></div>
 <div align = right>
 <h5>📅 2023.10.4 ~ 2023.11.30&emsp;&emsp;&emsp;&emsp;&ensp;</h5>
 </div>📌📍📋&#128161;&#128163;&#128165;

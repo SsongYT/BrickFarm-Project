@@ -128,7 +128,7 @@ public void inputCompleteOrder(@ModelAttribute UserOrdersheetDTO ordersheet, @Mo
 }
 ```
 
-<h4>💣Survice</h4>
+<h4>💣Service</h4>
 
 ```java
 // 재고,쿠폰보유,포인트보유 검증
@@ -288,7 +288,7 @@ UserCompleteDataDTO completeData, List<UserPaymentListDTO> paymentList, UserMemb
 <br/>
 <h3>💡코드 분석</h3>
 
-<h4>💣Survice</h4>
+<h4>💣Service</h4>
 
 ```java
 // 결제 취소 관련 메소드(공용화)-일괄처리 가능하도록 List로 진행
@@ -542,7 +542,7 @@ FROM
 GROUP BY B.merchant_uid
 </select>
 ```
-<h4>💣Survice</h4>
+<h4>💣Service</h4>
 
 ```java
 // 최종 완료 상태로 변경해야하는 merchant_uid 변경하는 메서드

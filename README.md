@@ -612,6 +612,8 @@ public boolean changeStateExchangeByComplete(List<AdminExchangeDTO> exchangeList
 >
 > 또한 쿼리 및 Service단도 깔끔해 졌을것 같다.
 ***
+</br>
+</br>
 <h2>📍관리자 일괄처리</h2>
 <img width="900" alt="상태 확정" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/dca08449-9382-428c-9f9d-16bef00dc127"/>
 
@@ -679,6 +681,7 @@ function detailErrorToastr(state) {
 ```
 
 ***
+</br>
 </br>
 <h2>📋최종 평가</h2>
 

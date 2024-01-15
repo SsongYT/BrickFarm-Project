@@ -612,6 +612,73 @@ public boolean changeStateExchangeByComplete(List<AdminExchangeDTO> exchangeList
 >
 > 또한 쿼리 및 Service단도 깔끔해 졌을것 같다.
 ***
+<h2>📍관리자 일괄처리</h2>
+<img width="900" alt="상태 확정" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/dca08449-9382-428c-9f9d-16bef00dc127"/>
+
+> 관리자 페이지에서 상태변화를 일괄적으로 할 수 있도록 구현하였고
+>
+> 단, API취소 같은 처리 불가능한 기능은 뷰단에서 유효성검사를 하도록 구현하여
+>
+> 사용자 편의성에 중점을 두어 구현하였고 유효성검사는 공용화하여 만들었다.
+
+<h3>💡코드 분석</h3>
+
+<h4>💣JS</h4>
+
+```java
+//디테일 Toastr
+function detailErrorToastr(state) {
+  let errorMsg = "";
+  let errorTitle = "";
+  if (state == "stateCompleteVerify") {
+    errorMsg = "완료상태가 아닌 정보로 </br>시도해주세요.";
+    errorTitle = "완료상태 변경불가";
+  } else if (state == "cancel") {
+    errorMsg = "배송된 상품은 취소를 할수없습니다.";
+    errorTitle = "취소 신청불가";
+  } else if (state == "exchangeReturn") {
+    errorMsg = "배송되지않은 상품은 교환/반품을 할수없습니다.";
+    errorTitle = "교환/반품 신청불가";
+  } else if (state == "completeActive") {
+    errorMsg = "배송되지않은 상품은 구매확정을 할수없습니다.";
+    errorTitle = "구매확정불가";
+  } else if (state == "inputVerify") {
+    errorMsg = "사유를 입력해주세요.";
+    errorTitle = "사유정보 미입력";
+  } else if (state == "inputVerifyBefore") {
+    errorMsg = "입금자명을 입력해주세요.";
+    errorTitle = "입금자명 미입력";
+  } else if (state == "postNoVerify") {
+    errorMsg = "운송장번호를 입력해주세요.";
+    errorTitle = "운송장 미입력";
+  } else if (state == "stateProcessVerify") {
+    errorMsg = "먼저 진행중으로 변경해주세요.";
+    errorTitle = "완료 상태 변경불가";
+  }
+  
+
+  toastr.error(errorMsg, errorTitle, {
+    positionClass: "toast-top-full-width",
+    timeOut: 5e3,
+    closeButton: !0,
+    debug: !1,
+    newestOnTop: !0,
+    progressBar: !0,
+    preventDuplicates: !0,
+    onclick: null,
+    showDuration: "300",
+    hideDuration: "1000",
+    extendedTimeOut: "1000",
+    showEasing: "swing",
+    hideEasing: "linear",
+    showMethod: "fadeIn",
+    hideMethod: "fadeOut",
+    tapToDismiss: !1,
+  });
+}
+```
+
+***
 </br>
 <h2>📋최종 평가</h2>
 

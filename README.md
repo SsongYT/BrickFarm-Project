@@ -1,5 +1,3 @@
-<img src="https://github-readme-stats.vercel.app/api?username=SsongYT" />
-
 <div align = center><img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=180&section=header&text=BrickFarm&fontSize=90"/></div>
 <div align = right>
 <h5>📅 2023.10.4 ~ 2023.11.30</h5>

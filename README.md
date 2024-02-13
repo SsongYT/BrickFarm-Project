@@ -36,16 +36,22 @@
 </div>
 <br/>
 <br/>
-<h1>📌개념적ERD</h1>
-<img width="900" alt="개념적ERD" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/08d7a97f-0174-49e3-97af-c2da6e60eab8"/>
+<h1>📌개념적ERD & 공학적ERD</h1>
+<p align="center">
+<img width="100%" alt="개념적ERD" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/08d7a97f-0174-49e3-97af-c2da6e60eab8"/>
+</p>
 <br/>
 <br/>
 <h1>📌공학적ERD</h1> 
-<img width="900" alt="공학적ERD" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/bb03cd58-2a29-49d9-810f-41869f2a2bb7"/>
+<p align="center">
+<img width="100%" alt="공학적ERD" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/bb03cd58-2a29-49d9-810f-41869f2a2bb7"/>
+</p>
 <br/>
 <br/>
 <h1>📌사이트맵</h1>
-<img width="900" alt="사이트맵" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/46495df8-4652-4e92-b668-54b0115e0bda"/>
+<p align="center">
+<img width="100%" alt="사이트맵" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/46495df8-4652-4e92-b668-54b0115e0bda"/>
+</p>
 <br/>
 <br/>
 <h1>🏆담당 : 결제 및 관리자페이지(주문)</h1>
@@ -57,7 +63,9 @@
 >일괄처리(다중처리)로 편리한 관리
 <br/>
 <h2>📍주요 DB테이블 소개</h2>
-<img width="900" alt="테이블" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/02fbf6b4-a407-4d8b-86ed-ae6737df6379"/>
+<p align="center">
+<img width="100%" alt="테이블" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/02fbf6b4-a407-4d8b-86ed-ae6737df6379"/>
+</p>
     
 >부분취소 기능을 구현하기위해 ordersheet에 각 세부상품이 있는 detailed_order 테이블로 구분하여 구현하고
 >
@@ -68,7 +76,9 @@
 >취소/반품시 코드적으로 이부분을 계산하여 결제금액을 반환하도록 하였다.
 <br/>
 <h2>📍결제 검증</h2>
-<img width="900" alt="결제 검증" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/4f483ac5-9017-4a5a-8c64-a3a3b2276004"/>
+<p align="center">
+<img width="100%" alt="결제 검증" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/4f483ac5-9017-4a5a-8c64-a3a3b2276004"/>
+</p>
 
 > javascript 에서 결제API를 이용한 결제 이후 script의 조작으로 데이터 위변조를 방지하기 위해
 >
@@ -272,7 +282,9 @@ UserCompleteDataDTO completeData, List<UserPaymentListDTO> paymentList, UserMemb
 <br/>
 <br/>
 <h2>📍결제 취소</h2>
-<img width="900" alt="결제 취소" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/39eda5d7-3c30-406b-9c0d-940b9da1a64a"/>
+<p align="center">
+<img width="100%" alt="결제 취소" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/39eda5d7-3c30-406b-9c0d-940b9da1a64a"/>
+</p>
 
 > 부분취소를 구현하였고 부분취소에 따른 배송비 문제와 결제 종류에 따른 문제가 발생하였고
 >
@@ -487,7 +499,9 @@ public Map<String, Object> changeStateReturnByComplete(List<Integer> returnNoLis
 <br/>
 <br/>
 <h2>📍상태 확정</h2>
-<img width="900" alt="상태 확정" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/eb8432a8-8856-45f7-8c43-a833325ab220"/>
+<p align="center">
+<img width="100%" alt="상태 확정" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/eb8432a8-8856-45f7-8c43-a833325ab220"/>
+</p>
 
 > detailed_order들의 상태가 모두 완료가 되면 ordersheet의 최종상태가 완료로 변경되고
 >
@@ -615,7 +629,9 @@ public boolean changeStateExchangeByComplete(List<AdminExchangeDTO> exchangeList
 </br>
 </br>
 <h2>📍관리자 일괄처리</h2>
-<img width="900" alt="상태 확정" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/dca08449-9382-428c-9f9d-16bef00dc127"/>
+<p align="center">
+<img width="100%" alt="상태 확정" src="https://github.com/SsongYT/BrickFarm-Project/assets/136442036/dca08449-9382-428c-9f9d-16bef00dc127"/>
+</p>
 
 > 관리자 페이지에서 상태변화를 일괄적으로 할 수 있도록 구현하였고
 >
